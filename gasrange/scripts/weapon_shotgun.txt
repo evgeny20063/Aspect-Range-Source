@@ -1,0 +1,128 @@
+// Shotgun
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HL2_Shotgun"
+	"viewmodel"				"models/weapons/v_shotgun.mdl"
+	"playermodel"			"models/weapons/w_shotgun.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"				"3"
+	"bucket_position"		"0"
+	"bucket_360"			"1"
+	"bucket_position_360"	"1"
+
+	"clip_size"				"6"
+	"primary_ammo"			"Buckshot"
+	"secondary_ammo"		"None"
+
+	"weight"				"4"
+	"rumble"			"5"
+	"item_flags"			"0"
+
+//        IronSight
+//	{
+//		"forward"		"-5"
+//		"right"		"-1"
+//		"up"		"1.5"
+//		"roll"		"0.5"
+//		"pitch"		"-1"
+//		"yaw"		"1"
+//		"fov"		"-15"
+//		"time"		"0.30"
+//		"crosshair"	"1"
+//		"chromatic"	"3.5"
+//		"blur"		"1.0"
+//	}
+
+//        IronSight
+//	{
+//		"forward"		"-3"
+//		"right"		"0.3"
+//		"up"		"2"
+//		"roll"		"-5"
+//		"pitch"		"-2"
+//		"yaw"		"2"
+//		"fov"		"-15"
+//		"time"		"0.18"
+//		"crosshair"	"1"
+//		"chromatic"	"3.5"
+//		"blur"		"1.0"
+//	}
+
+        IronSight
+	{
+		"forward"		"-6"
+		"right"		"-3.05"
+		"up"		"2.95"
+		"roll"		"3.6"
+		"pitch"		"0"
+		"yaw"		"0"
+		"fov"		"-15"
+		"time"		"0.18"
+		"crosshair"	"0"
+		"chromatic"	"3.5"
+		"blur"		"5.0"
+                "trueironsights" "1" // if true - when ironsighted : stops walking animation, less weapon turning lag, no hitmarkers.
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+
+		"empty"				"Weapon_Shotgun.Empty"
+		"reload"			"Weapon_Shotgun.Reload"
+		"special1"			"Weapon_Shotgun.Special1"
+		"single_shot"		"Weapon_Shotgun.Single"
+		"double_shot"		"Weapon_Shotgun.Double"
+		// NPC WEAPON SOUNDS
+		"reload_npc"		"Weapon_Shotgun.NPC_Reload"
+		"single_shot_npc"	"Weapon_Shotgun.NPC_Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"b"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"b"
+		}
+		"weapon_small"
+		{
+				"font"		"WeaponIconsSmall"
+				"character"	"b"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIconsSmall"
+				"character"	"s"
+		}
+		"crosshair"
+		{
+				"font"		"HL2MModCrosshairs"
+				"character"	"6"
+		}
+		"zoom"
+		{
+				"font"		"HL2MModCrosshairs"
+				"character"	"A"
+		}
+
+		"autoaim"
+		{
+				"font"		"HL2MModCrosshairs"
+				"character"	"7"
+		}
+		"zoom_autoaim"
+		{
+				"font"		"HL2MModCrosshairs"
+				"character"	"A"
+		}
+	}
+}
